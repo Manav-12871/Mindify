@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mindify | Your AI Companion</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="https://i.ibb.co/xtmfxfCT/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <!-- Hero -->
+      <section id="hero">
+        <img
+          src="https://i.ibb.co/xtmfxfCT/logo.png"
+          alt="Mindify Logo"
+          class="logo"
+        />
+        <h1>Let Your Mind Breathe with Mindify</h1>
+        <p>
+          Your AI-powered companion for emotional support and mental clarity.
+        </p>
+        <button
+          onclick="document.getElementById('chat-section').scrollIntoView({behavior:'smooth'})"
+        >
+          Start Chat
+        </button>
+      </section>
+
+      <div class="grid-layout">
+        <!-- How it Works -->
+        <section id="how-it-works">
+          <h2>How Mindify Supports You</h2>
+          <div class="steps">
+            <div class="step">
+              <h3>🤖 Chat with Mindify</h3>
+              <p>Get 24/7 AI-powered emotional support.</p>
+            </div>
+            <div class="step">
+              <h3>📈 Track Your Mood</h3>
+              <p>Reflect on your feelings and track your mental state.</p>
+            </div>
+            <div class="step">
+              <h3>💬 Connect with Experts</h3>
+              <p>Get help from certified professionals if needed.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Chat Interface -->
+        <section id="chat-section">
+          <div class="container">
+            <div
+              class="chat-header"
+              style="
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 16px;
+              "
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png"
+                class="bot-avatar"
+                alt="Bot"
+                style="
+                  width: 64px;
+                  height: 64px;
+                  border-radius: 50%;
+                  margin-bottom: 8px;
+                "
+              />
+              <h1 style="margin: 0; font-size: 1.7rem">Mindify AI</h1>
+              <p style="margin: 0; color: #777">
+                Your mental health AI companion
+              </p>
+            </div>
+            <main>
+              <div class="chat-box" id="chat-box"></div>
+              <form id="chat-form">
+                <input
+                  type="text"
+                  id="user-input"
+                  placeholder="Type your thoughts..."
+                  required
+                  autocomplete="off"
+                />
+                <button type="submit">Send</button>
+              </form>
+            </main>
+          </div>
+        </section>
+
+        <!-- Mood Emojis -->
+        <section id="mood">
+          <h2>How are you feeling today?</h2>
+          <div class="moods">
+            <span>😊</span>
+            <span>😔</span>
+            <span>😡</span>
+            <span>😨</span>
+            <span>🥱</span>
+          </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials">
+          <h2>What Our Users Say</h2>
+          <div class="images">
+            <img
+              src="https://i.ibb.co/BN07ZkN/testimonial1.jpg"
+              alt="Happy User 1"
+            />
+            <img
+              src="https://i.ibb.co/ZKqb77H/testimonial2.jpg"
+              alt="Happy User 2"
+            />
+            <img
+              src="https://i.ibb.co/xXXRwhM/testimonial3.jpg"
+              alt="Happy User 3"
+            />
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+          <h2>Get in Touch</h2>
+          <form>
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </section>
+
+        <!-- Newsletter -->
+        <section id="newsletter">
+          <h2>Subscribe for Updates</h2>
+          <form
+            onsubmit="event.preventDefault(); alert('Thanks for subscribing!');"
+          >
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2025 Mindify. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
